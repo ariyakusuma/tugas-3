@@ -1,24 +1,19 @@
-from http import client
-from multiprocessing.connection import Client
-from django.test import TestCase , Client
-from django.urls import reverse
-from mywatchlist.views import *
+from django.test import SimpleTestCase
+from mywatchlist.views import show_watchlist, show_xml, show_json
+from django.urls import reverse, resolve
 
+class TestUrls(SimpleTestCase):
+    def test_show_mywatchlist_url(self):
+        url = reverse('mywatchlist:show_watchlist')
+        self.assertEqual(resolve(url).func, show_watchlist)
 
-class html_mywatchlist(TestCase):
-    def test_url_exist_at_correct_location(self):
-        response = Client().get(reverse('mywatchlist:show_watchlist'))
-        self.assertEqual(response.status_code, 200)
+    def test_show_mywatchlistxml_url(self):
+        url = reverse('mywatchlist:show_xml')
+        self.assertEqual(resolve(url).func, show_xml)
 
-class xml_mywatchlist(TestCase):
-    def test_url_exist_at_correct_location(self):
-        response = Client().get(reverse('mywatchlist:show_xml'))
-        self.assertEqual(response.status_code, 200)
-
-class json_mywatchlist(TestCase):
-    def test_url_exist_at_correct_location(self):
-        response = Client().get(reverse('mywatchlist:show_json'))
-        self.assertEqual(response.status_code, 200)
+    def test_show_mywatchlistjson_url(self):
+        url = reverse('mywatchlist:show_json')
+        self.assertEqual(resolve(url).func, show_json)
 
 
 # Create your tests here.
