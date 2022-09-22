@@ -1,0 +1,113 @@
+[
+    {
+        "model":"mywatchlist.movielist",
+        "pk":1,
+        "fields":{
+            "watched":"Watched",
+            "title":"The Cars",
+            "rating": 5,
+            "release_day": "09-06-2006",
+            "review": "mobilnya bisa ngomong"
+            
+        }
+},
+{
+        "model":"mywatchlist.movielist",
+        "pk":2,
+        "fields":{
+            "watched":"Watched",
+            "title":"The Conjuring",
+            "rating": 4,
+            "release_day": "27-07-2013",
+            "review": "kureng serem"
+        }
+    },
+    {
+        "model":"mywatchlist.movielist",
+        "pk":3,
+        "fields":{
+            "watched":"Watched",
+            "title":"Miracle in Cell no.7",
+            "rating": 5,
+            "release_day": "08-09-2022",
+            "review": "kata hanin bagus"
+        }
+     },
+     {
+        "model":"mywatchlist.movielist",
+        "pk":4,
+        "fields":{
+            "watched":"Watched",
+            "title":"Business Proposal",
+            "rating": 4,
+            "release_day": "28-02-2022",
+            "review": "seru"
+        }
+    },
+    {
+       "model":"mywatchlist.movielist",
+       "pk":5,
+       "fields":{
+           "watched":"Watched",
+           "title":"Miracle in Cell no.7",
+           "rating": 5,
+           "release_day": "08-09-2022",
+           "review": "kata hanin bagus"
+       }
+    },
+    {
+       "model":"mywatchlist.movielist",
+       "pk":6,
+       "fields":{
+           "watched":"Watched",
+           "title":"Iron Man 3",
+           "rating": 5,
+           "release_day": "25-04-2013",
+           "review": "visual effectnya 10/10"
+       }
+    },
+    {
+       "model":"mywatchlist.movielist",
+       "pk":7,
+       "fields":{
+           "watched":"Watched",
+           "title":"Breaking Bad",
+           "rating": 5,
+           "release_day": "20-01-2008",
+           "review": "Plot ceritanya bagus"
+       }
+    },
+    {
+       "model":"mywatchlist.movielist",
+       "pk":8,
+       "fields":{
+           "watched":"Watched",
+           "title":"Better Call Saul",
+           "rating": 5,
+           "release_day": "08-02-2015",
+           "review": "Pre dan sequel dari Breaking Bad, bagus banget"
+       }
+    },
+    {
+       "model":"mywatchlist.movielist",
+       "pk":9,
+       "fields":{
+           "watched":"Watched",
+           "title":"Peaky Blinders",
+           "rating": 5,
+           "release_day": "12-09-2013",
+           "review": "tirisss"
+       }
+    },
+    {
+       "model":"mywatchlist.movielist",
+       "pk":10,
+       "fields":{
+           "watched":"Watched",
+           "title":"Eternals",
+           "rating": 3,
+           "release_day": "03-11-2021",
+           "review": "rada kureng ceritanya, tapi visualnya bagus"
+       }
+   }
+]
