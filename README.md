@@ -1,62 +1,17 @@
-# Template Proyek Django PBP
+**link heroku**
+https://tugas3-pbp-ariya.herokuapp.com/mywatchlist/
 
-Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023
+**Perbedaan xml,json, dan html**
+JSON (JavaScript Object Notation) adalah sebuah format data yang digunakan untuk pertukaran dan penyimpanan data. Kata kunci yang perlu diingat: “pertukaran & penyimpanan data” JSON merupakan bagian (subset) dari Javascript. JSON bisa dibaca dengan berbagai macam bahasa pemrograman seperti C, C++, C#, Java, Javascript Perl, Python, dan banyak lagi. Hal ini membuat JSON menjadi bahasa yang ideal untuk perturakan data antar aplikasi.
+XML (Extensive Markup Language), adalah format data berbasis teks yang berasal dari SGML (ISO 8879) dan ditulis dengan cara yang sama diikuti oleh HTML  Fungsi dari xml adalah mengalihdayakan data. Ini menyimpan data dalam format teks biasa daripada mengintegrasikannya ke dalam dokumen HTML yang membuatnya ideal untuk mewakili data hierarkis seperti dokumen, transaksi, faktur, buku, dan banyak lagi.  Ini adalah format pertukaran data independen yang menyandikan dokumen dalam format yang bisa dibaca mesin dan bisa dibaca manusia. Ini adalah cara yang fleksibel untuk membuat format informasi dan berbagi data terstruktur di World Wide Web.  Ini sebenarnya adalah bagian dari SGML (Standard Generalized Markup Language), mirip dengan HTML yang berisi simbol markup untuk menggambarkan konten halaman yang memungkinkan pengguna untuk menentukan bahasa markup mereka sendiri yang disesuaikan.  Keuntungan utama XML adalah platform itu independen yang berarti pengguna dapat mengambil data dari program lain seperti SQL dan mengubahnya menjadi XML kemudian membagikan data dengan platform lain. Berbicara sederhana, ini adalah teknologi berorientasi dokumen yang menyediakan kemampuan untuk menyimpan dan menampilkan data dalam format yang dapat dibaca mesin dan yang dapat dibaca manusia.
+HTML, digunakan untuk membuat dokumen elektronik (disebut halaman) yang ditampilkan di World Wide Web (www). Setiap halaman berisi serangkaian koneksi ke halaman lain yang disebut hyperlink. Setiap halaman web yang Anda lihat di Internet ditulis menggunakan satu versi kode HTML atau yang lain. Kode HTML memastikan format teks dan gambar yang tepat untuk browser Internet. Tanpa HTML, browser tidak akan tahu bagaimana menampilkan teks sebagai elemen atau memuat gambar atau elemen lainnya. HTML juga menyediakan struktur dasar halaman, di mana Cascading Style Sheets dihamparkan untuk mengubah tampilannya.
 
-*Read this in other languages: [Indonesian](README.md), [English](README.en.md)*
+**data delivey dalam implementasi platform**
+agar program yang dibuat dapat sesuai dengan keperluan yang ingin dicapai agar dapat menciptakan efisiensi, meningkatkan layanan, dan menghasilkan pendapatan
 
-## Pendahuluan
+**Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas**
+Saya mengimplementasikan source code dan langkah-langkah pembuatan program yang saya dapat dari tutorial lab1 dan lab 2.
 
-Repositori ini merupakan sebuah template yang dirancang untuk membantu mahasiswa yang sedang mengambil mata kuliah Pemrograman Berbasis Platform (CSGE602022) mengetahui struktur sebuah proyek aplikasi Django serta file dan konfigurasi yang penting dalam berjalannya aplikasi. Kamu dapat dengan bebas menyalin isi dari repositori ini atau memanfaatkan repositori ini sebagai pembelajaran sekaligus awalan dalam membuat sebuah proyek Django.
-
-## Cara Menggunakan
-
-Apabila kamu ingin menggunakan repositori ini sebagai repositori awalan yang nantinya akan kamu modifikasi:
-
-1. Buka laman GitHub repositori templat kode, lalu klik tombol "**Use this template**"
-   untuk membuat salinan repositori ke dalam akun GitHub milikmu.
-2. Buka laman GitHub repositori yang dibuat dari templat, lalu gunakan perintah
-   `git clone` untuk menyalin repositorinya ke suatu lokasi di dalam sistem
-   berkas (_filesystem_) komputermu:
-
-   ```shell
-   git clone <URL ke repositori di GitHub> <path ke suatu lokasi di filesystem>
-   ```
-3. Masuk ke dalam repositori yang sudah di-_clone_ dan jalankan perintah berikut
-   untuk menyalakan _virtual environment_:
-
-   ```shell
-   python -m venv env
-   ```
-4. Nyalakan environment dengan perintah berikut:
-
-   ```shell
-   # Windows
-   .\env\Scripts\activate
-   # Linux/Unix, e.g. Ubuntu, MacOS
-   source env/bin/activate
-   ```
-5. Install dependencies yang dibutuhkan untuk menjalankan aplikasi dengan perintah berikut:
-
-   ```shell
-   pip install -r requirements.txt
-   ```
-
-6. Jalankan aplikasi Django menggunakan server pengembangan yang berjalan secara
-   lokal:
-
-   ```shell
-   python manage.py runserver
-   ```
-7. Bukalah `http://localhost:8000` pada browser favoritmu untuk melihat apakah aplikasi sudah berjalan dengan benar.
-
-## Contoh Deployment 
-
-Pada template ini, deployment dilakukan dengan memanfaatkan GitHub Actions sebagai _runner_ dan Heroku sebagai platform Hosting aplikasi. 
-
-Untuk melakukan deployment, kamu dapat melihat instruksi yang ada pada [Tutorial 0](https://pbp-fasilkom-ui.github.io/ganjil-2023/assignments/tutorial/tutorial-0).
-
-Untuk contoh aplikasi Django yang sudah di deploy, dapat kamu akses di [https://django-pbp-template.herokuapp.com/](https://django-pbp-template.herokuapp.com/)
-
-## Credits
-
-Template ini dibuat berdasarkan [PBP Ganjil 2021](https://gitlab.com/PBP-2021/pbp-lab) yang ditulis oleh Tim Pengajar Pemrograman Berbasis Platform 2021 ([@prakashdivyy](https://gitlab.com/prakashdivyy)) dan [django-template-heroku](https://github.com/laymonage/django-template-heroku) yang ditulis oleh [@laymonage, et al.](https://github.com/laymonage). Template ini dirancang sedemikian rupa sehingga mahasiswa dapat menjadikan template ini sebagai awalan serta acuan dalam mengerjakan tugas maupun dalam berkarya.
+**postman**
+https://docs.google.com/document/d/1Y-ptAC9ZkIN7_FHNit1-yJ1n6sLPjxV-an-CVBYj7Ew/edit?usp=sharing
+maaf kak saya tidak tau cara upload foto ke readme jadinya saya taro link gdocs yang berisi ss dari postman saya
