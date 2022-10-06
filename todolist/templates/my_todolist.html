@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  body {
+      background-color: rgb(251, 244, 184);
+  }
+</style>
+<nav class="navbar" style="background-color: hotpink">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">todolist</span>
+    <button ><a href="{% url 'todolist:logout' %}">Logout</a></button>
+ 
+  </div>
+</nav>
+<body>
+<h1 style="text-align: center ">{{user.username}}'s To do list</h1>
+
+<style>
+    table, th{
+      text-align: center;
+      border: 1px solid rgb(4, 4, 4);
+      border-collapse: collapse;
+    }
+    td{
+      text-align: center;
+      border: 1px solid rgb(4, 4, 4);
+      border-collapse: collapse;
+    }
+    .button{
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+
+<table rules="all", border="10", table align="center">
+  <thread>
+    <tr style="background-color: rgb(219, 45, 161);">
+      <th colspan="2">Tanggal</th>
+      <th colspan="2">Judul</th>
+      <th colspan="3">Deskripsi</th>
+      <th colspan="2" >Hapus</th>
+    </tr>
+  </thread>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for task in todolist %}
+      <tr style="background-color:rgb(249, 199, 222)">
+        <td colspan="2">{{task.date}}</td>
+        <td colspan="2">{{task.title}}</td>
+        <td colspan="3">{{task.description}}</td>
+        <td colspan="2">
+          <button><a href="delete_task/{{task.pk}}">Delete</a></button>
+        </td>
+    </tr>
+{% endfor %}
+</table>
+
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+
+  {% for card in todolist %}
+  {#  Single Card Template:#}
+  <div class="card" style="width: 16rem; margin: 20px; height: 15rem;background-color:rgb(249, 199, 222)">
+    
+      <div class="card-body">
+        <div style="display: flex; flex-direction: row;">
+          <h5 class="card-title">{{ card.title }}</h5>
+          {#  Colored cirlce:#}
+          <div style="
+            background: black;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            border-radius: 50%;
+          "></div>
+        </div>
+        <p class="card-text">{{ card.description }}</p>
+        <p class="card-text">{{ card.date }}</p>
+          <div style="position: absolute;
+          margin-left:-50px;
+          left:55%;
+          width:100px;
+          bottom:5px;
+          ">
+            
+        
+            <a href="delete_task/{{card.pk}}" class="btn btn-primary" style="background: grey;">Delete</a>
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+
+</div>
+<div class="button">
+ 
+  <button><a href="{% url 'todolist:my_todolist' %}">Add Todo</a></button>  
+</div>
+
+</body>
+<div style="text-align: center;">
+  <h6>Sesi terakhir login: {{ last_login }}</h6>
+</div>
+
+{% endblock content %}

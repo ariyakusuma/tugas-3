@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Login</title>
+{% endblock meta %}
+
+{% block content %}
+<style>
+    body {
+        background-color: rgb(251, 244, 184);
+    }
+</style>
+<nav class="navbar" style="background-color: hotpink">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">todolist</span>
+    </div>
+  </nav>
+
+<div class = "login">
+
+    <h1 style="text-align:center">Login</h1>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <table style="margin-left:auto;margin-right:auto">
+            <tr>
+                <td>Username: </td>
+                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+            </tr>
+                    
+            <tr>
+                <td>Password: </td>
+                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input class="btn login_btn" type="submit" value="Login"></td>
+             
+            </tr>
+        </table>
+    </form>
+
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}     
+    
+    <h6 style="text-align:center">Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a></h6>
+ 
+
+</div>
+
+{% endblock content %}

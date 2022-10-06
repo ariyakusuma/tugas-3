@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Registrasi Akun</title>
+{% endblock meta %}
+
+{% block content %}  
+<style>
+    body {
+        background-color: rgb(251, 244, 184);
+    }
+</style>
+<nav class="navbar" style="background-color: hotpink">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">todolist</span>
+    </div>
+  </nav>
+
+<div class = "login">
+    
+    <h1>Formulir Registrasi</h1>  
+
+        <form method="POST" >  
+            {% csrf_token %}  
+            <table>  
+                {{ form.as_table }}  
+                <tr>  
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Daftar"/></td>  
+                </tr>  
+            </table>  
+        </form>
+
+    {% if messages %}  
+        <ul>   
+            {% for message in messages %}  
+                <li>{{ message }}</li>  
+                {% endfor %}  
+        </ul>   
+    {% endif %}
+
+</div>  
+
+{% endblock content %}
